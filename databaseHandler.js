@@ -1,7 +1,8 @@
 const MongoClient = require("mongodb");
-let env = require("dotenv").config();
+//let env = require("dotenv").config();
 
-const url = env.parsed.DB_HOST;
+const url =
+  "mongodb+srv://dbAdmin:Logman@cluster0-9b3l1.mongodb.net/?retryWrites=true&w=majority";
 const dbName = "visaDB";
 const countryListCollection = "countryList";
 let db = null;
