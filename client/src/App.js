@@ -6,7 +6,9 @@ let country = [];
 axios
   .get("/api/countrylist")
   .then(function(response) {
-    console.log("Response: " + JSON.stringify(response.data[0].countryAll));
+    console.log(
+      "Response on client  : " + JSON.stringify(response.data[0].countryAll)
+    );
     country = response.data[0].countryAll;
   })
   .catch(function(error) {

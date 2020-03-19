@@ -5,7 +5,7 @@ const atlasDBHandler = require("../../databaseHandler");
 //@path /api/countrylist
 router.get("/countrylist", function(req, res) {
   atlasDBHandler.fetchCountryList().then(result => {
-    console.log("Hello nro " + result);
+    console.log("Hello from server " + result);
     res.send(result);
   });
 });
